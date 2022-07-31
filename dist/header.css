@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+header {
+  height: 80px;
+  width: 1920px;
+  margin-top: 0;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+header .menu-wrapper #menu {
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  header .menu-wrapper #menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    position: absolute;
+    cursor: pointer;
+    left: 920px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header .menu-wrapper #menu {
+    left: 660px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header .menu-wrapper #menu {
+    left: 520px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  header .menu-wrapper #menu {
+    left: 390px;
+  }
+}
+header .menu-wrapper #menu-box {
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  header .menu-wrapper #menu-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    z-index: 1;
+    left: 765px;
+    top: 64px;
+    z-index: 1;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.886);
+    text-align: center;
+    padding: 30px;
+    width: 200px;
+    height: 220px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header .menu-wrapper #menu-box {
+    left: 500px;
+    top: 64px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header .menu-wrapper #menu-box {
+    left: 340px;
+    top: 64px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  header .menu-wrapper #menu-box {
+    left: 220px;
+    top: 64px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  header .menu-wrapper #menu-box li {
+    list-style-type: none;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  header .menu-wrapper #menu-box li a {
+    padding: 15px;
+    font-size: 28px;
+    text-decoration: none;
+    color: #1C3913;
+  }
+}
+@media only screen and (max-width: 1740px) {
+  header {
+    width: 1740px;
+  }
+}
+@media only screen and (max-width: 1536px) {
+  header {
+    width: 1536px;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  header {
+    width: 1366px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  header {
+    width: 1200px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  header {
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header {
+    width: 768px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header {
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  header {
+    width: 480px;
+  }
+}
+header .buttons {
+  width: 586px;
+  margin-right: 240px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .buttons .styleSelect select {
+  font-size: 16px;
+  color: #1C3913;
+  font-family: "Lato", sans-serif;
+  border: none;
+}
+header .buttons .styleSelect select option.active {
+  background-color: #ffff88;
+}
+@media only screen and (max-width: 1740px) {
+  header .buttons {
+    margin-right: 240px;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  header .buttons {
+    margin-right: 200px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  header .buttons {
+    margin-right: 120px;
+  }
+}
+header .header-btn {
+  cursor: pointer;
+  width: 140px;
+  margin-left: 24px;
+  height: 51px;
+  background-color: #4EB528;
+  color: #FFFFFF;
+  font-size: 16px;
+  border: none;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+}
+
+.menu-wrapper {
+  padding-left: 240px;
+  width: 854px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+}
+.menu-wrapper .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.menu-wrapper .logo h5 {
+  padding-left: 3px;
+  color: #1C3913;
+  font-size: 18px;
+  line-height: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+}
+@media only screen and (max-width: 1740px) {
+  .menu-wrapper {
+    padding-left: 180px;
+    width: 794px;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .menu-wrapper {
+    padding-left: 160px;
+    width: 750px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .menu-wrapper {
+    padding-left: 180px;
+    width: 750px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .menu-wrapper {
+    padding-left: 60px;
+    width: 640px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .menu-wrapper {
+    padding-left: 30px;
+    width: 570px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .menu-wrapper {
+    padding-left: 20px;
+    width: 460px;
+  }
+}
+
+header .top-bar {
+  width: 500px;
+  box-sizing: border-box;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0px;
+  margin-left: 50px;
+}
+@media only screen and (max-width: 1024px) {
+  header .top-bar {
+    display: none;
+  }
+}
+header .top-bar a {
+  text-decoration: none;
+  color: #1C3913;
+  font-size: 16px;
+}
+
+.circle-shape {
+  width: 33px;
+  height: 33px;
+  background-color: #4EB528;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle-shape svg {
+  width: 28px;
+  height: 28px;
+}
+
+/*# sourceMappingURL=header.css.map */

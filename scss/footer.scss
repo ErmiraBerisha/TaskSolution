@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+@import 'breakpoints.scss';
+
+@import "variables";
+
+footer{
+    width: 1920px;
+    height: 242px;
+    background-color: $lightgrey;
+    position: relative;
+    bottom: 0;
+    @include respond(4xl) {
+        width: 1740px;
+    }
+    @include respond(3xl) {
+        width: 1536px;
+    }
+    @include respond(2xl) {
+        width: 1366px;
+    }
+    @include respond(xl) {
+        width: 1200px;
+    }
+    @include respond(lg) {
+        width: 1024px;
+    }
+    @include respond(md) {
+        width: 768px;
+    }
+    @include respond(tablet) {
+        width: 600px;
+    }
+    @include respond(mobile) {
+        width: 480px;
+    }
+   
+.newsletter{
+    background-color: $darkgreen;
+    color: $lightgrey;
+    font-family: 'Lato', sans-serif;
+    width: 1440px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 240px;
+    padding-left: 240px;
+    align-items: center;
+    @include respond(4xl) {
+        width: 1260px;  
+    }
+    @include respond(3xl) {
+        width: 1196px;
+        padding-left: 170px;
+        padding-right: 170px;
+    }
+    @include respond(2xl) {
+        width: 1026px;
+        padding-left: 170px;
+        padding-right: 170px;
+    }
+    @include respond(xl) {
+        width: 860px;
+        padding-left: 170px;
+        padding-right: 170px;
+    }
+    @include respond(lg) {
+        width: 864px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    @include respond(md) {
+        width: 608px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    @include respond(tablet) {
+        width: 540px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @include respond(mobile) {
+        width: 420px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    h2{
+        font-size: 34px;
+        @include respond(2xl) {
+            font-size: 28px;
+        }
+        @include respond(md) {
+            font-size: 18px;
+        }
+    }
+    .input-container{
+        display: flex;
+        flex-direction: row;
+        @include respond(md) {
+            width: 260px ;
+        }
+        ::placeholder{
+            color: #FFFFFF;
+            font-size: 16px;
+            font-family: 'Lato', sans-serif;
+            padding-left: 12px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            }
+        input{
+            width: 453px;
+            height: 51px;
+            box-sizing: border-box;
+            border: $lightgreen 2px solid;
+            background: transparent;
+           
+            
+        }
+        button{
+            width: 51px;
+            height: 51px;
+            background-color: $lightgreen;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg{
+                color: $lightgrey;
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+    .last-section{
+        width: 1920px;
+        height: 202px;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        padding-left: 240px;
+        padding-right: 456px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color:#FFFFFF;
+        @include respond(3xl) {
+            width: 1536px;
+        }
+        @include respond(xl) {
+            width: 1200px;
+            padding-left: 180px;
+            padding-right: 270px;
+        }
+        @include respond(md) {
+            width: 768px;
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        @include respond(tablet) {
+            width: 580px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        @include respond(mobile) {
+            width: 460px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+       
+        .logos{
+            margin: 0;
+            padding: 0;
+            .first-column{
+                display: flex;
+                flex-direction: column;
+                height: 80px;
+                justify-content: space-between;
+                @include respond(mobile) {
+                    width: 70px;
+                }
+                .company-logo{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    h5{
+                        padding-left: 3px;
+                        color: $darkgreen;
+                        font-size: 18px;
+                        font-weight: 900;
+                        line-height: 16px;
+                        font-family: 'Lato', sans-serif;
+                        margin: 0;
+                        @include respond (mobile) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .socialmedia{
+                    display: flex;
+                    flex-direction: row;
+                    width: 120px;
+                    justify-content: space-between;
+                    @include respond(mobile){
+                        width: 70px;
+                    }
+
+                    svg{
+                        width: 25px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+        .content-area{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 858px;
+            @include respond(3xl) {
+                width: 630px;
+            }
+            @include respond(mobile) {
+                width: 700px;
+                position: relative;
+                right: 38px;
+                justify-content: left;;
+                padding: 0;
+            }
+           
+            .footer-text{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                color: $darkgreen;
+                height: 90px;
+                margin: 0;
+                padding: 0;
+                @include respond(3xl) {
+                    margin-left: 80px;
+                }
+                
+                h6{
+                    font-size: 18px;
+                    color: $darkgreen;
+                    margin: 0;
+                    margin-bottom: 8px;
+                    padding: 0;
+                    @include respond(mobile) {
+                        font-size: 14px;
+                    }
+                }
+                p{
+                    margin: 0;
+                    padding: 0;
+                    font-size: 14px;
+                    margin-bottom: 8px;
+                    letter-spacing: 0.08px;
+                    @include respond(md) {
+                        font-size: 12px;
+                    }
+                    @include respond(tablet) {
+                        font-size: 10px;
+                    }
+                    
+                    
+                }
+                a{
+                    text-decoration: none;
+                    color: $darkgreen;
+                    font-size: 14px;
+                    margin-bottom: 8px;
+                    letter-spacing: 0.08px;
+                    @include respond(md) {
+                        font-size: 12px;
+                        
+                    }
+                    @include respond(tablet) {
+                        font-size: 10px;
+                    }
+                
+                }
+                
+            }
+        }
+    }
+    }
+    .copyright{
+        background-color: $lightgrey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1920px;
+        height: 40px;
+        font-size: 16px;
+        letter-spacing: 0.01px;
+        color: $grey;
+        font-family: 'Lato', sans-serif;
+        @include respond(3xl) {
+            width: 1536px;
+        }
+        @include respond(2xl) {
+            width: 1366px;
+        }
+        @include respond(xl) {
+            width: 1200px;
+        }
+        @include respond(lg) {
+            width: 1024px;
+        }
+        @include respond(md) {
+            width: 768px;
+        }
+        @include respond(tablet) {
+            width: 600px;
+        }
+        @include respond(mobile) {
+            width: 480px;
+        }
+    }
+}

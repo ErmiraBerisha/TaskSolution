@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+@import 'breakpoints.scss';
+
+@import "variables";
+
+@mixin country {
+    position: absolute;
+    margin: auto;
+    width: 34px;
+    display: flex;
+    flex-direction: column; 
+}
+
+@mixin line {
+    width: 0;
+    height: 84px;
+    border: 1px solid #1C3913;
+    opacity: 0.5;
+    margin: auto;  
+}
+
+@mixin rectanglesize {
+    width: 34px;
+    height: 24px;
+}
+
+.second-page{
+    width: 1920px;
+    height: 550px;
+    margin-bottom: 0;
+    @include respond(4xl) {
+        width: 1740px;
+    }
+    @include respond(3xl) {
+        width: 1536px;
+    }
+    @include respond(2xl) {
+        width: 1366px;
+    }
+    @include respond(xl) {
+        width: 1200px;
+    }
+    @include respond(lg) {
+        width: 1024px;
+         
+      }
+      @include respond(md) {
+        width: 768px;
+         
+      }
+      @include respond(tablet) {
+        width: 600px;
+         
+      }
+      @include respond(mobile) {
+        width: 480px;
+         
+      }
+    
+    .text{
+        margin-bottom: 0;
+        font-family: 'Lato', sans-serif;
+        h5{
+           margin-top: 60px;
+           margin-bottom: 12px;
+           padding: 0;
+           font-size: 32px;
+           color: $darkgreen;
+           @include respond(lg) {
+                font-size: 36px;
+          }
+        }
+        p{
+            font-size: 16px;
+            line-height: 24px;
+            color: $grey;
+            @include respond(lg) {
+                font-size: 20px;
+          }
+          @include respond(mobile) {
+            font-size: 14px;
+      }
+            
+        }
+        text-align: center;
+        width: 513px;
+        height: 146px;
+        box-sizing: border-box;
+        margin: auto;
+        @include respond(lg) {
+            height: 210px;
+      }
+      @include respond(mobile) {
+        width: 300px;
+        height: 300px;
+  }
+    }
+  .map{
+    position: relative;
+    height: 408px;
+    img{
+        width: 1300px;
+        height: 408px;
+        margin-left: 310px;
+        margin-right: 310px;
+        @include respond(4xl) {
+            margin-left: 180px;
+            margin-right: 180px;
+        }
+        @include respond(3xl) {
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        @include respond(2xl) {
+            width: 1150px;
+            height: 358px;
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+        @include respond(xl) {
+            width: 1020px;
+            height: 270px;
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+        @include respond(lg) {
+            width: 1000px;
+            height: 270px;
+            margin-left: 0px;
+            margin-right: 25px;
+      }
+      @include respond(md) {
+        width: 600px;
+        height: 170px;
+        margin-left: 80px;
+        margin-right: 25px;
+  }
+    @include respond(tablet) {
+        width: 540px;
+        height: 170px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    @include respond(mobile) {
+        width: 420px;
+        height: 140px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+  
+  
+
+  
+    }
+    .country-1{
+        top: 24px;
+        right: 945px;
+        @include country();
+        @include respond(4xl) {
+            right: 900px;  
+        }
+        @include respond(3xl) {
+            right: 775px;
+        }
+        @include respond(2xl) {
+            top: 8px;
+            right: 700px;
+        }
+        @include respond(xl) {
+            top: -23px;
+            right: 598px;
+        }
+        @include respond(lg) {
+            top: -25px;
+            right: 510px;
+        }
+        @include respond(md) {
+            top: -60px;
+            right: 375px;
+        }
+        @include respond(tablet) {
+            top: -60px;
+            right: 285px;
+        }
+        @include respond(mobile) {
+            top: -65px;
+            right: 225px;
+        }
+        
+        svg{
+            margin-right: 5px;
+            margin: auto;
+        }
+        .line{
+          @include line();
+        }
+        span{
+            margin: auto;
+            margin-top: 0;
+            padding-top: 0;
+            position: relative;
+            top: -4px;
+        }
+    }
+    .country-2{
+            top: 46px;
+            right: 902px;
+            @include country();
+            @include respond(4xl) {
+                right: 855px;
+            }
+            @include respond(3xl) {
+                right: 730px;
+            }
+            @include respond(2xl) {
+               top: 29px;
+                right: 660px;
+            }
+            @include respond(xl) {
+                top: -8px;
+                right: 567px;
+            }
+            @include respond(lg) {
+                top: -8px;
+                right: 480px;
+            }
+            @include respond(md) {
+                top: -50px;
+                right: 355px;
+            }
+            @include respond(tablet) {
+                top: -50px;
+                right: 265px;
+            }
+            @include respond(mobile) {
+                top: -60px;
+                right: 210px;
+            }
+            svg{
+                margin-right: 5px;
+                margin: auto;
+            }
+            .line{
+                @include line();
+            }
+            span{
+                margin: auto;
+                margin-top: 0;
+                padding-top: 0;
+                position: relative;
+                top: -4px;
+            }
+    }
+    .country-3{
+            top: 93px;
+            right: 800px;
+            @include country();
+            @include respond(4xl) {
+                right: 760px;
+            }
+            @include respond(3xl) {
+                right: 630px;
+            }
+            @include respond(2xl) {
+                top: 66px;
+                right: 575px;
+            }
+            @include respond(xl) {
+                top: 20px;
+                right: 500px;
+            }
+            @include respond(lg) {
+                top: 20px;
+                right: 420px;
+            }
+            @include respond(md) {
+                top: -30px;
+                right: 315px;
+            }
+            @include respond(tablet) {
+                top: -30px;
+                right: 225px;
+            }
+            @include respond(mobile) {
+                top: -48px;
+                right: 178px;
+            }
+            svg{
+                margin-right: 5px;
+                margin: auto;
+            }
+            .line{
+                @include line();
+            }
+        span{
+            margin: auto;
+            margin-top: 0;
+            padding-top: 0;
+            position: relative;
+            top: -4px;
+        }
+    }
+    .country-4{
+            top: 162px;
+            right: 475px;
+            @include country();
+            @include respond(4xl) {
+                right: 425px;
+            }
+            @include respond(3xl) {
+                right: 302px;
+            }
+            @include respond(2xl) {
+                top: 128px;
+                right: 281px;
+            }
+            @include respond(xl) {
+                top: 70px;
+                right: 285px;
+               
+            }
+            @include respond(lg) {
+               top: 65px;
+               right: 195px;
+            }
+            @include respond(md) {
+                top: 3px;
+                right: 182px;
+             }
+             @include respond(tablet) {
+                top: 1px;
+                right: 99px;
+             }
+             @include respond(mobile) {
+                top: -22px;
+                right: 70px;
+             }
+            svg{
+                margin-right: 5px;
+                margin: auto;
+            }
+            .line{
+                @include line();
+            }
+        span{
+            margin: auto;
+            margin-top: 0;
+            padding-top: 0;
+            position: relative;
+            top: -4px;
+        }
+
+    }
+  }
+}
+
+.last-section-pg2{
+    width: 1366px;
+    padding-left: 240px;
+    padding-right: 314px;
+    height: 120px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 24px;
+    background: #FFFFFF;
+    font-family: 'Lato', sans-serif;
+    color: $darkgreen;
+    @include respond(4xl) {
+        width: 1186px;
+    }
+    @include respond(3xl) {
+        width: 982px;
+    }
+    @include respond(2xl) {
+        width: 1000px;
+        padding-left: 180px;
+       
+    }
+    @include respond(xl) {
+        width: 865px;
+        padding-left: 180px;
+
+    }
+    @include respond(lg) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 300px;
+    }
+    @include respond(md) {
+        width: 608px;
+        margin-top: 0px;
+        margin-left: 80px;
+        margin-right: 80px;
+        padding: 0;
+    }
+    @include respond(tablet) {
+        width: 400px;
+        margin-top: 0px;
+        margin-left: 150px;
+        margin-right: 0px;
+        padding: 0;
+    }
+    @include respond(mobile) {
+        width: 42px;
+        margin-top: 0px;
+        margin-left: 30px;
+        margin-right: 30px;
+        padding: 0;
+    }
+    .wrapper{
+        width: 203px;
+        height: 43px;
+        display: flex;
+        flex-direction: column;
+        @include respond(2xl) {
+            width: 190px;
+        }
+        
+        p{
+            font-size: 16px;
+            color: $grey;
+            line-height: 24px;
+            margin-top: 0;
+            padding-top: 0;
+        }
+        .rectangles{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            h5{
+                margin-left: 12px;
+                margin-bottom: 16px;
+                padding-bottom: 0;
+                margin-top: 0px;
+                font-size: 24px;
+                @include respond(xl) {
+                   font-size: 18px;
+                }
+            }
+        }
+        .rectangle1{
+            @include rectanglesize();
+            background-color: $grey;
+        }
+        .rectangle2{
+            @include rectanglesize();
+            background-color: $lightgreen;
+        }
+        .rectangle3{
+            @include rectanglesize();
+            background-color:$darkgreen;
+        }
+        .rectangle4{
+            @include rectanglesize();
+            background-color:$lightgreen;
+        }
+    }
+}

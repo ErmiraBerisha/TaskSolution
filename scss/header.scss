@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import 'breakpoints.scss';
+
+@import "variables";
+
+@mixin menu-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    position: absolute; 
+    cursor: pointer;        
+    
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header{
+    .menu-wrapper{
+        #menu{
+            display: none;
+            @include respond(lg) {
+                @include menu-icon();
+                left: 920px;
+            }
+            @include respond(md) {
+                left: 660px;
+            }
+            @include respond(tablet) {
+                left: 520px;
+            }
+            @include respond(mobile) {
+                left: 390px;
+            }
+        }
+        #menu-box{
+            display: none;
+            @include respond(lg) {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                position: absolute;
+                z-index: 1;
+                left: 765px;
+                top: 64px;
+                z-index: 1;
+                justify-content: space-around;
+                background-color: rgba(255, 255, 255, 0.886);
+                text-align: center;
+                padding: 30px;
+                width: 200px;
+                height: 220px;
+            }
+            @include respond(md) {
+                left: 500px;
+                top: 64px;
+            }
+            @include respond(tablet) {
+                left: 340px;
+                top: 64px;
+            }
+            @include respond(mobile) {
+                left: 220px;
+                top: 64px;
+            }
+            li{
+                @include respond(lg) {
+                    list-style-type: none;
+                    margin-bottom: 20px;
+                }
+                a{
+                    @include respond(lg) {
+                        padding: 15px;
+                        font-size: 28px;
+                        text-decoration: none;
+                        color:$darkgreen;   
+                    }
+                }
+            }
+        }
+    }
+    height: 80px;
+    width: 1920px;
+    margin-top: 0;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;  
+    @include respond(4xl) {
+        //background: rgb(132, 201, 149);
+        width: 1740px;
+    }
+    @include respond(3xl) {
+        //background: rgb(174, 140, 30);
+        width: 1536px;
+    }
+    @include respond(2xl) {
+        //background: rgb(128, 0, 109);
+        width: 1366px;
+    }
+    @include respond(xl) {
+        //background: rgb(0, 73, 128);
+        width: 1200px;
+    }
+    @include respond(lg) {
+        //background: rgb(107, 156, 193);
+        width: 1024px;
+        display: flex;
+        justify-content: space-between;
+    }
+    @include respond(md) {
+        //background: rgb(215, 72, 72);
+        width: 768px;
+    }
+    @include respond(tablet) {
+        //background: rgb(76, 62, 62);
+        width: 600px;
+    }
+    @include respond(mobile) {
+        //background: rgb(193, 185, 185);
+        width: 480px;
+    }
+    .buttons{
+        width: 586px;
+        margin-right: 240px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .styleSelect{
+            select{
+                font-size: 16px;
+                color: $darkgreen;
+                font-family: 'Lato', sans-serif;
+                border: none;
+                option.active{
+                    background-color: rgb(255, 255, 136);
+                }
+                
+            }
+        }
+        @include respond(4xl) {
+            margin-right: 240px;
+        }
+        @include respond(2xl) {
+            margin-right: 200px;
+            
+        } 
+        @include respond(lg) {
+            margin-right: 120px;
+        }
+   
+    }
+        .header-btn{
+            cursor: pointer;
+            width: 140px;
+            margin-left: 24px;
+            height: 51px;
+            background-color: $lightgreen;
+            color:#FFFFFF;
+            font-size: 16px;
+            border: none;
+            font-weight: 700;
+            font-family: 'Lato', sans-serif;
+        }   
+    
+}
+
+.menu-wrapper{
+    padding-left: 240px;
+    width: 854px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    .logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        h5{
+            padding-left: 3px;
+            color: $darkgreen;
+            font-size: 18px;
+            line-height: 16px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 900;
+        }
+    }
+    @include respond(4xl) {
+        padding-left: 180px;
+       width: 794px;
+    }
+    @include respond(3xl) {
+        
+    }
+    @include respond(2xl) {
+        padding-left: 160px;
+        width: 750px;
+    }
+    @include respond(xl) {
+        padding-left: 180px;
+        width: 750px;
+    }
+    @include respond(lg) {
+        padding-left: 60px;
+        width: 640px;
+    }
+    @include respond(tablet) {
+        padding-left: 30px;
+        width: 570px;
+    }
+    @include respond(mobile) {
+        padding-left: 20px;
+        width: 460px;
+    }
+   
+}
+
+header .top-bar{
+    width: 500px;
+    box-sizing: border-box;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0px;
+    margin-left: 50px;
+    @include respond(lg) {
+        display: none;
+    }
+    a{
+        text-decoration: none;
+        color: $darkgreen;
+        font-size: 16px;
+    }
+}
+
+.circle-shape{
+    width: 33px;
+    height: 33px;
+    background-color: $lightgreen;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg{
+        width: 28px;
+        height: 28px;
+    }
+}
